@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOO - Bienestar Integral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">OOO</div>
+        <nav class="main-nav">
+            <a href="#agenda">Agenda</a>
+            <a href="#comunidad">Comunidad</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#tienda">Tienda</a>
+        </nav>
+        <div class="user-area">
+            <span class="user-points">1,250 Puntos</span>
+            <div class="user-profile" id="user-menu-button">
+                <span>Ana García ▼</span>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="#mi-espacio">Mi Espacio OOO</a>
+                    <a href="#">Mi Perfil</a>
+                    <a href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="page-section">
+            <div class="hero">
+                <h1>Bienvenida a OOO, Ana</h1>
+                <p>Tu espacio de bienestar integral en un solo lugar. Descubre, participa y cuídate.</p>
+                <a href="#agenda" class="btn-hero">Ver Próximos Eventos</a>
+            </div>
+        </section>
+
+        <section id="agenda" class="page-section">
+            <div class="page-header">
+                <h1>Agenda de Eventos OOO</h1>
+                <p>Aquí encontrarás todos nuestros webinars, talleres y actividades. ¡Participa!</p>
+            </div>
+            <div class="event-list-container">
+                 <article class="event-card">
+                    <div class="event-date-box"><span class="day">15</span><span class="month">JUL</span></div>
+                    <div class="event-details">
+                        <span class="event-category category-taller">Taller</span>
+                        <h2>Taller Práctico de Mindfulness</h2>
+                        <p class="event-meta"><i class="fa-solid fa-clock"></i> 16:00h - 17:30h | <i class="fa-solid fa-user-tie"></i> Ponente: Elena Herrero</p>
+                    </div>
+                    <div class="event-action"><a href="#" class="btn-action">Apuntarme</a></div>
+                </article>
+                <article class="event-card">
+                     <div class="event-date-box"><span class="day">27</span><span class="month">JUN</span></div>
+                    <div class="event-details">
+                        <span class="event-category category-webinar">Webinar</span>
+                        <h2>Webinar: Nutrición y Energía</h2>
+                        <p class="event-meta"><i class="fa-solid fa-clock"></i> 11:00h - 12:00h | <i class="fa-solid fa-user-tie"></i> Ponente: Carlos Solís</p>
+                    </div>
+                    <div class="event-action"><a href="#" class="btn-action">Apuntarme</a></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="comunidad" class="page-section">
+            <div class="page-header">
+                <h1>Comunidad OOO</h1>
+                <p>El espacio para compartir, descubrir y motivarse juntos.</p>
+            </div>
+            <div class="recommendation-grid">
+                <article class="recommendation-card">
+                    <div class="rec-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>El Hombre en Busca de Sentido</h3><p class="rec-author">Libro de Viktor Frankl</p><p class="rec-comment">"Un libro que te cambia la perspectiva sobre la vida y la resiliencia."</p><div class="rec-footer"><span>Recomendado por Juan P.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 12</span></div>
+                </article>
+                <article class="recommendation-card">
+                    <div class="rec-icon"><i class="fa-solid fa-podcast"></i></div>
+                    <h3>Entiende Tu Mente</h3><p class="rec-author">Podcast de Psicología</p><p class="rec-comment">"Episodios cortos y muy útiles para entender cómo funcionamos. ¡Engancha!"</p><div class="rec-footer"><span>Recomendado por Lucía M.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 21</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="cursos" class="page-section">
+            <div class="page-header">
+                <h1>Catálogo de Cursos OOO</h1>
+                <p>Fórmate a tu ritmo y gana puntos. El conocimiento también es bienestar.</p>
+            </div>
+            <div class="course-grid">
+                <article class="course-card">
+                    <div class="course-card-image"><i class="fa-solid fa-brain"></i></div>
+                    <div class="course-card-content"><span class="course-card-category">Bienestar Emocional</span><h3>Gestión del Estrés</h3><p>Técnicas y herramientas para manejar la presión diaria.</p><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div><a href="#" class="btn-action">Continuar Curso</a></div>
+                </article>
+                <article class="course-card">
+                    <div class="course-card-image"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="course-card-content"><span class="course-card-category">Salud Física</span><h3>Primeros Auxilios Básicos</h3><p>Aprende a actuar en situaciones de emergencia.</p><div class="progress-bar"><div class="progress" style="width: 20%;"></div></div><a href="#" class="btn-action">Continuar Curso</a></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="tienda" class="page-section">
+            <div class="page-header">
+                <h1>Tienda de Recompensas OOO</h1>
+                <p>Usa tus puntos OOO para canjear premios exclusivos.</p>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image"><i class="fa-solid fa-mug-hot"></i></div><h3>Taza Corporativa OOO</h3><div class="product-price">500 Puntos</div><a href="#" class="btn-redeem">Canjear</a>
+                </article>
+                <article class="product-card">
+                    <div class="product-image"><i class="fa-solid fa-bottle-water"></i></div><h3>Botella de Agua Reutilizable</h3><div class="product-price">750 Puntos</div><a href="#" class="btn-redeem">Canjear</a>
+                </article>
+            </div>
+        </section>
+        
+        <section id="mi-espacio" class="page-section">
+            <div class="page-header">
+                <h1>Mi Espacio OOO</h1>
+                <p>Tu centro de control personal. Aquí puedes ver tu progreso, tu actividad y tus puntos.</p>
+            </div>
+
+            <div class="dashboard-header">
+                <div class="points-card">
+                    <span class="points-value">1,250</span>
+                    <span class="points-label">Capital OOO (Total)</span>
+                </div>
+                <div class="points-card">
+                    <span class="points-value">133</span>
+                    <span class="points-label">Puntos de este mes</span>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h2><i class="fa-solid fa-list-check"></i> Mi Actividad Reciente</h2>
+                    <table class="activity-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Concepto</th>
+                                <th>Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15 Junio, 2025</td>
+                                <td>Curso completado: "Gestión del Estrés"</td>
+                                <td class="points-positive">+15</td>
+                            </tr>
+                            <tr>
+                                <td>12 Junio, 2025</td>
+                                <td>Asistencia a webinar: "Nutrición y Energía"</td>
+                                <td class="points-positive">+10</td>
+                            </tr>
+                            <tr>
+                                <td>10 Junio, 2025</td>
+                                <td>Recomendación de libro: "El poder del ahora"</td>
+                                <td class="points-positive">+8</td>
+                            </tr>
+                            <tr>
+                                <td>02 Junio, 2025</td>
+                                <td>Canje en tienda: Taza OOO</td>
+                                <td class="points-negative">-500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="card">
+                    <h2><i class="fa-solid fa-person-running"></i> Realizar una Aportación</h2>
+                    <p>Gana puntos compartiendo con la comunidad o registrando tu actividad física.</p>
+                    <div class="action-buttons">
+                        <a href="#" class="btn-action">Subir Recomendación</a>
+                        <a href="#" class="btn-action">Registrar Rutina de Salud</a>
+                        <a href="#" class="btn-action">Añadir Prueba Deportiva</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

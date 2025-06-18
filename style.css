@@ -1,0 +1,224 @@
+/* --- VARIABLES Y ESTILOS GLOBALES --- */
+:root {
+    --primary-red: #D90429;
+    --dark-text: #212529;
+    --light-text: #6c757d;
+    --background-grey: #f8f9fa;
+    --white: #ffffff;
+    --border-color: #dee2e6;
+    --header-height: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height); /* Asegura que el scroll se detenga justo debajo del header */
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: var(--white);
+    color: var(--dark-text);
+    padding-top: var(--header-height);
+}
+
+/* --- HEADER FIJO Y NAVEGACIÓN --- */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.logo { font-size: 1.8rem; font-weight: bold; color: var(--primary-red); }
+.main-nav a { margin: 0 0.5rem; text-decoration: none; color: var(--dark-text); font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 30px; border: 2px solid transparent; transition: all 0.3s ease; }
+.main-nav a:hover { background-color: #f0f0f0; border-color: #e0e0e0; color: var(--dark-text); }
+.main-nav a.active { background-color: var(--primary-red); color: var(--white); border-color: var(--primary-red); font-weight: bold; }
+.user-area { display: flex; align-items: center; }
+.user-points { margin-right: 1.5rem; font-weight: bold; color: var(--primary-red); }
+.user-profile { position: relative; cursor: pointer; }
+.dropdown-menu { display: none; position: absolute; top: 120%; right: 0; background-color: white; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 200px; z-index: 10; }
+.dropdown-menu.show { display: block; }
+.dropdown-menu a { display: block; padding: 0.8rem 1rem; text-decoration: none; color: var(--dark-text); }
+.dropdown-menu a:hover { background-color: #f5f5f5; }
+
+
+/* --- LAYOUT GENERAL Y SECCIONES --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.page-section {
+    padding: 5rem 2rem;
+    min-height: calc(90vh - var(--header-height));
+    border-bottom: 1px solid var(--border-color);
+}
+.page-section:nth-child(even) { background-color: var(--background-grey); }
+.page-header { text-align: center; margin-bottom: 3rem; }
+.page-header h1 { font-size: 2.5rem; color: var(--dark-text); margin-bottom: 0.5rem; }
+.page-header p { font-size: 1.2rem; color: var(--light-text); max-width: 600px; margin: 0 auto; }
+
+
+/* --- ESTILOS DE LA SECCIÓN: INICIO (HERO) --- */
+.hero { text-align: center; padding: 4rem 0; }
+.btn-hero { display: inline-block; margin-top: 2rem; background-color: var(--primary-red); color: var(--white); padding: 1rem 2rem; border-radius: 30px; text-decoration: none; font-weight: bold; transition: transform 0.2s; }
+.btn-hero:hover { transform: scale(1.05); }
+
+
+/* --- ESTILOS DE LA SECCIÓN: AGENDA --- */
+.event-list-container { display: flex; flex-direction: column; gap: 1.5rem; }
+.event-card { display: flex; background-color: var(--white); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--border-color); overflow: hidden; transition: box-shadow 0.3s; }
+.event-card:hover { box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+.event-date-box { display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: var(--primary-red); color: var(--white); padding: 1rem 2rem; text-align: center; }
+.event-date-box .day { font-size: 2.5rem; font-weight: bold; line-height: 1; }
+.event-date-box .month { font-size: 1rem; font-weight: 500; text-transform: uppercase; }
+.event-details { padding: 1.5rem; flex-grow: 1; }
+.event-category { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem; font-weight: 500; color: var(--white); margin-bottom: 0.75rem; }
+.category-webinar { background-color: #007bff; }
+.category-taller { background-color: #28a745; }
+.event-details h2 { margin: 0 0 0.5rem 0; font-size: 1.5rem; }
+.event-meta { color: var(--light-text); margin: 0 0 1rem 0; font-size: 0.9rem; }
+.event-action { display: flex; align-items: center; padding: 1.5rem; border-left: 1px solid var(--border-color); }
+.btn-action { background-color: var(--primary-red); color: var(--white); text-decoration: none; padding: 1rem 1.5rem; border-radius: 8px; font-weight: 500; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
+.btn-action:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(217, 4, 41, 0.2); }
+.btn-action[disabled] { background-color: #adb5bd; cursor: not-allowed; box-shadow: none; transform: none; }
+
+
+/* --- ESTILOS DE LA SECCIÓN: COMUNIDAD --- */
+.recommendation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+.recommendation-card { background-color: var(--white); border: 1px solid var(--border-color); border-left: 5px solid var(--primary-red); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; }
+.rec-icon { font-size: 2rem; color: var(--primary-red); margin-bottom: 1rem; }
+.recommendation-card h3 { margin: 0; font-size: 1.3rem; }
+.rec-author { margin: 0.25rem 0 1rem 0; font-style: italic; color: var(--light-text); }
+.rec-comment { flex-grow: 1; font-size: 0.95rem; }
+.rec-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; font-size: 0.85rem; color: var(--light-text); }
+.rec-likes { font-weight: bold; color: var(--primary-red); }
+.rec-likes .fa-heart { margin-right: 0.25rem; }
+
+
+/* --- ESTILOS DE LA SECCIÓN: CURSOS --- */
+.course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.course-card { background-color: var(--white); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s; }
+.course-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+.course-card-image { width: 100%; height: 150px; background-color: var(--primary-red); display: flex; justify-content: center; align-items: center; }
+.course-card-image .fa-solid { font-size: 4rem; color: rgba(255, 255, 255, 0.8); }
+.course-card-content { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
+.course-card-category { display: inline-block; align-self: flex-start; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem; font-weight: 500; color: var(--white); background-color: var(--light-text); margin-bottom: 1rem; }
+.course-card-content h3 { margin: 0 0 0.75rem 0; font-size: 1.4rem; }
+.course-card-content p { margin: 0 0 1.5rem 0; color: var(--light-text); flex-grow: 1; }
+.course-card-content .progress-bar { width: 100%; background-color: #e9ecef; border-radius: 5px; height: 8px; margin-bottom: 1.5rem; }
+.course-card-content .progress { background-color: var(--primary-red); height: 100%; border-radius: 5px; }
+
+
+/* --- ESTILOS DE LA SECCIÓN: TIENDA --- */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.product-card { background-color: var(--white); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+.product-image { width: 100%; height: 180px; background-color: var(--background-grey); display: flex; justify-content: center; align-items: center; }
+.product-image .fa-solid { font-size: 5rem; color: #ced4da; }
+.product-card h3 { font-size: 1.3rem; margin: 1.5rem 1rem 0.5rem 1rem; }
+.product-price { font-size: 1.5rem; font-weight: bold; color: var(--primary-red); margin: 0.5rem 1rem 1.5rem 1rem; flex-grow: 1; }
+.btn-redeem { display: block; background-color: var(--primary-red); color: var(--white); padding: 1rem; text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: background-color 0.3s; }
+.btn-redeem:not([disabled]):hover { background-color: #b80022; }
+.btn-redeem[disabled] { background-color: #adb5bd; cursor: not-allowed; }
+
+/* --- ESTILOS DE LA SECCIÓN: MI ESPACIO OOO --- */
+/* --- AÑADIR ESTO AL FINAL DE TU ARCHIVO style.css --- */
+
+.dashboard-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.points-card {
+    flex: 1;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.points-card .points-value {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-red);
+}
+
+.points-card .points-label {
+    font-size: 1rem;
+    color: var(--light-text);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* La tabla ocupa más espacio que los botones */
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Adaptación para pantallas más pequeñas */
+@media (max-width: 992px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    .dashboard-header {
+        flex-direction: column;
+    }
+}
+
+.dashboard-grid .card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.dashboard-grid .card h2 {
+    color: var(--primary-red);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.dashboard-grid .card h2 .fa-solid { margin-right: 0.75rem; }
+
+
+/* Tabla de actividad */
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.activity-table th, .activity-table td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+.activity-table th {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--light-text);
+    text-transform: uppercase;
+}
+.points-positive { color: #28a745; font-weight: bold; }
+.points-negative { color: var(--primary-red); font-weight: bold; }
+
+
+/* Botones de acción */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
