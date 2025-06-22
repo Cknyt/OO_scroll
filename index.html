@@ -9,44 +9,176 @@
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="logo">OOO</div>
-        <nav class="main-nav">
-            <a href="#agenda">Agenda</a>
-            <a href="#comunidad">Comunidad</a>
-            <a href="#cursos">Cursos</a>
-            <a href="#tienda">Tienda</a>
-        </nav>
-        <div class="user-area">
-            <span class="user-points">1,250 Puntos</span>
-            <div class="user-profile" id="user-menu-button">
-                <span>Ana García ▼</span>
-                <div class="dropdown-menu" id="dropdown-menu">
-                    <a href="#mi-espacio">Mi Espacio OOO</a>
-                    <a href="#">Mi Perfil</a>
-                    <a href="#">Cerrar Sesión</a>
-                </div>
-            </div>
+<header class="main-header">
+  <div class="header-top">
+    <div class="logo-area">
+      <img src="img/logo_oreka.png" alt="Logo" class="logo-img">
+    </div>
+    <div class="header-center">
+      Hola user
+    </div>
+    <div class="user-area">
+      <span class="user-points">1.200 puntos</span>
+      <img src="img/logo_kutxa.jpg" alt="Icono perfil" class="profile-icon">
+    </div>
+  </div>
+  <hr class="nav-line">
+
+    <nav class="main-nav">
+        <div class="nav-links">
+            <a href="#aula">Aula</a><span class="divider">|</span>
+            <a href="#foro">Foro</a><span class="divider">|</span>
+            <a href="#comunidad">Comunidad</a><span class="divider">|</span>
+            <a href="#tienda">Tienda</a><span class="divider">|</span>
+            <a href="#mi-espacio">Mi espacio</a>
         </div>
+    </nav>
+
+
+
+    <hr class="nav-line">
     </header>
 
     <main>
-        <section id="inicio" class="page-section">
-            <div class="hero">
-                <h1>Bienvenida a OOO, Ana</h1>
-                <p>Tu espacio de bienestar integral en un solo lugar. Descubre, participa y cuídate.</p>
-                <a href="#agenda" class="btn-hero">Ver Próximos Eventos</a>
-            </div>
-        </section>
 
-        <section id="agenda" class="page-section">
+        <div id="banner-sorteo" class="sorteo-banner">
+            <p>🎉 ¡Participa en nuestro Sorteo Mensual y gana 2.000 puntos extra!</p> <p>Desde el 1 de julio hasta el 15 de julio, quienes estén activos en la plataforma Oreka, entrarán en el sorteo, cuanto más participes, más posibilidades de ganar tendrás.</p>
+        </div>
+
+       
+
+    <section id="aula" class="page-section">
+    <div class="page-header">
+        <h1>AULA OREKA</h1>
+        <p>Fórmate a tu ritmo y gana puntos.</p> 
+        <p>El conocimiento es bienestar.</p>
+    </div>
+
+    <div class="course-carousel-container">
+        <button class="carousel-button prev">&#10094;</button>
+
+        <div class="course-carousel-viewport"> <!-- NUEVO contenedor para ocultar overflow -->
+        <div class="course-carousel-track">
+        
+            
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-brain"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Bienestar Emocional</span>
+            <h3>Gestión del Estrés</h3>
+            <p>Técnicas y herramientas para manejar la presión diaria.</p>
+            <p>2 horas</p>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-heart"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Bienestar Físico</span>
+            <h3>Movilidad y Estiramientos</h3>
+            <p>Rutinas suaves para mejorar tu flexibilidad y bienestar corporal.</p>
+            <p>1.5 horas</p>
+            <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-apple-whole"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Nutrición</span>
+            <h3>Alimentación Consciente</h3>
+            <p>Aprende a comer con atención plena y mejora tu relación con la comida.</p>
+            <p>2 horas</p>
+            <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-dumbbell"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Bienestar Físico</span>
+            <h3>Fuerza sin Equipamiento</h3>
+            <p>Entrena tu cuerpo con ejercicios funcionales desde casa.</p>
+            <p>3 horas</p>
+            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-spa"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Bienestar Emocional</span>
+            <h3>Mindfulness para principiantes</h3>
+            <p>Comienza a meditar con ejercicios sencillos y guiados.</p>
+            <p>1 hora</p>
+            <div class="progress-bar"><div class="progress" style="width: 10%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-carrot"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Nutrición</span>
+            <h3>Cocina Saludable en 15 Minutos</h3>
+            <p>Platos rápidos, nutritivos y sabrosos para tu día a día.</p>
+            <p>2.5 horas</p>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-person-walking"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Bienestar Físico</span>
+            <h3>Caminar para tu Salud</h3>
+            <p>Descubre los beneficios físicos y mentales de caminar cada día.</p>
+            <p>1 hora</p>
+            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+        <div class="course-card">
+        <div class="course-card-image"><i class="fa-solid fa-mug-hot"></i></div>
+        <div class="course-card-content">
+            <span class="course-card-category">Bienestar Emocional</span>
+            <h3>Desconexión Digital</h3>
+            <p>Estrategias para reducir el estrés asociado al uso excesivo de pantallas.</p>
+            <p>1.5 horas</p>
+            <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+            <a href="#" class="btn-action">Ir al curso</a>
+        </div>
+        </div>
+
+
+
+
+        </div>
+        </div>
+
+        <button class="carousel-button next">&#10095;</button>
+    </div>
+    </section>
+
+
+
+
+        <section id="foro" class="page-section">
             <div class="page-header">
-                <h1>Agenda de Eventos OOO</h1>
+                <h1>FORO OREKA</h1>
                 <p>Aquí encontrarás todos nuestros webinars, talleres y actividades. ¡Participa!</p>
             </div>
+
             <div class="event-list-container">
                  <article class="event-card">
-                    <div class="event-date-box"><span class="day">15</span><span class="month">JUL</span></div>
+                    <div class="event-date-box"><span class="day">15</span><span class="month">JUN</span></div>
                     <div class="event-details">
                         <span class="event-category category-taller">Taller</span>
                         <h2>Taller Práctico de Mindfulness</h2>
@@ -61,112 +193,482 @@
                         <h2>Webinar: Nutrición y Energía</h2>
                         <p class="event-meta"><i class="fa-solid fa-clock"></i> 11:00h - 12:00h | <i class="fa-solid fa-user-tie"></i> Ponente: Carlos Solís</p>
                     </div>
+                    <div class="event-action"><a href="#" class="btn-action" style="background-color: #28a745; color: white;">Apuntado</a></div>
+                </article>
+                <article class="event-card">
+                     <div class="event-date-box"><span class="day">06</span><span class="month">JUL</span></div>
+                    <div class="event-details">
+                        <span class="event-category category-webinar">Webinar</span>
+                        <h2>Webinar: Aprendiendo a respirar</h2>
+                        <p class="event-meta"><i class="fa-solid fa-clock"></i> 11:00h - 12:00h | <i class="fa-solid fa-user-tie"></i> Ponente: Carlos Solís</p>
+                    </div>
                     <div class="event-action"><a href="#" class="btn-action">Apuntarme</a></div>
                 </article>
             </div>
         </section>
 
+
+
+
+
+
+
         <section id="comunidad" class="page-section">
-            <div class="page-header">
-                <h1>Comunidad OOO</h1>
-                <p>El espacio para compartir, descubrir y motivarse juntos.</p>
+        <div class="page-header">
+            <h1>COMUNIDAD OREKA</h1>
+            <p>El espacio para compartir, descubrir y motivarse juntos.</p>
+        </div>
+
+        <!-- === TUS RECOMENDACIONES === -->
+        <div class="section-box">
+            <div class="centrado">
+            <h1>Tus recomendaciones</h1>
+            <p>Si hay algo que te inspira en temas como la nutrición, el bienestrar emocional o el bienestrar físico compártelo con tus compañeras y compañeros. Si te gusta las recomendaciones de otros, dale a like (corazón).</p>
+            </div><br><br>
+
+            <div class="rec-controls">
+            <label>Tema
+                <select id="filter-theme">
+                <option value="Todo">Todo</option>
+                <option value="Nutrición">Nutrición</option>
+                <option value="Bienestar emocional">Bienestar emocional</option>
+                <option value="Bienestar físico">Bienestar físico</option>
+                </select>
+            </label>
+
+            <label>Soporte
+                <select id="filter-support">
+                <option value="Todo">Todo</option>
+                <option value="Libro">Libro</option>
+                <option value="Película">Película</option>
+                <option value="Video">Video</option>
+                <option value="Podcast">Podcast</option>
+                <option value="Serie">Serie</option>
+                <option value="Otros">Otros</option>
+                </select>
+            </label>
+
+            <label>Ordenar por
+                <select id="filter-order">
+                <option value="likes">Más likes</option>
+                <option value="new">Más nuevo</option>
+                <option value="old">Más viejo</option>
+                </select>
+            </label>
+
+            <input id="filter-search" type="text" placeholder="Buscar por usuario o texto…">
             </div>
-            <div class="recommendation-grid">
-                <article class="recommendation-card">
-                    <div class="rec-icon"><i class="fa-solid fa-book-open"></i></div>
-                    <h3>El Hombre en Busca de Sentido</h3><p class="rec-author">Libro de Viktor Frankl</p><p class="rec-comment">"Un libro que te cambia la perspectiva sobre la vida y la resiliencia."</p><div class="rec-footer"><span>Recomendado por Juan P.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 12</span></div>
-                </article>
-                <article class="recommendation-card">
-                    <div class="rec-icon"><i class="fa-solid fa-podcast"></i></div>
-                    <h3>Entiende Tu Mente</h3><p class="rec-author">Podcast de Psicología</p><p class="rec-comment">"Episodios cortos y muy útiles para entender cómo funcionamos. ¡Engancha!"</p><div class="rec-footer"><span>Recomendado por Lucía M.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 21</span></div>
-                </article>
+
+            <div class="recommendation-carousel-container">
+            <button class="carousel-button prev rec-prev">&#10094;</button>
+            <div class="recommendation-carousel-viewport">
+                <div class="recommendation-carousel-track">
+                    <article class="recommendation-card"
+                            data-theme="Nutrición"
+                            data-support="Podcast"
+                            data-likes="870"
+                            data-date="2025-05-15">
+                        <div class="rec-icon"><i class="fa-solid fa-podcast"></i></div>
+                        <h3>Comer Bien para Vivir Mejor</h3>
+                        <p class="rec-author">Podcast de hábitos saludables</p>
+                        <p class="rec-comment">"Consejos claros y aplicables para mejorar tu alimentación diaria."</p>
+                        <div class="rec-footer"><span>Recomendado por Javier G.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 870</span></div>
+                    </article>
+
+                    <article class="recommendation-card"
+                            data-theme="Bienestar emocional"
+                            data-support="Libro"
+                            data-likes="452"
+                            data-date="2025-04-20">
+                        <div class="rec-icon"><i class="fa-solid fa-book"></i></div>
+                        <h3>El arte de no amargarse la vida</h3>
+                        <p class="rec-author">Libro de psicología positiva</p>
+                        <p class="rec-comment">"Lectura muy amena que te hace reflexionar sobre cómo interpretamos lo que nos pasa."</p>
+                        <div class="rec-footer"><span>Recomendado por Marta F.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 452</span></div>
+                    </article>
+
+                    <article class="recommendation-card"
+                            data-theme="Bienestar físico"
+                            data-support="Video"
+                            data-likes="312"
+                            data-date="2025-03-10">
+                        <div class="rec-icon"><i class="fa-solid fa-video"></i></div>
+                        <h3>5 Ejercicios para la Espalda</h3>
+                        <p class="rec-author">Video de fisioterapia en casa</p>
+                        <p class="rec-comment">"Muy útiles para aliviar tensiones si trabajas muchas horas sentado."</p>
+                        <div class="rec-footer"><span>Recomendado por Laura S.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 312</span></div>
+                    </article>
+
+                    <article class="recommendation-card"
+                            data-theme="Bienestar emocional"
+                            data-support="Serie"
+                            data-likes="921"
+                            data-date="2025-05-02">
+                        <div class="rec-icon"><i class="fa-solid fa-tv"></i></div>
+                        <h3>Mindfulness: El Camino Interior</h3>
+                        <p class="rec-author">Serie documental</p>
+                        <p class="rec-comment">"Un viaje visual y emocional por distintas prácticas de meditación."</p>
+                        <div class="rec-footer"><span>Recomendado por Sergio T.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 921</span></div>
+                    </article>
+
+                    <article class="recommendation-card"
+                            data-theme="Nutrición"
+                            data-support="Libro"
+                            data-likes="688"
+                            data-date="2025-04-04">
+                        <div class="rec-icon"><i class="fa-solid fa-book"></i></div>
+                        <h3>La revolución de los alimentos fermentados</h3>
+                        <p class="rec-author">Guía práctica</p>
+                        <p class="rec-comment">"Aprende a preparar kombucha, kimchi y más, explicado con claridad."</p>
+                        <div class="rec-footer"><span>Recomendado por Ana R.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 688</span></div>
+                    </article>
+
+                    <article class="recommendation-card"
+                            data-theme="Bienestar físico"
+                            data-support="Película"
+                            data-likes="397"
+                            data-date="2025-02-27">
+                        <div class="rec-icon"><i class="fa-solid fa-film"></i></div>
+                        <h3>El Poder del Movimiento</h3>
+                        <p class="rec-author">Película inspiradora</p>
+                        <p class="rec-comment">"Historias reales que muestran cómo el ejercicio transformó vidas."</p>
+                        <div class="rec-footer"><span>Recomendado por Roberto M.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 397</span></div>
+                    </article>
+
+                    <article class="recommendation-card"
+                            data-theme="Nutrición"
+                            data-support="Otros"
+                            data-likes="229"
+                            data-date="2025-03-18">
+                        <div class="rec-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>Calendario de frutas de temporada</h3>
+                        <p class="rec-author">Recurso visual descargable</p>
+                        <p class="rec-comment">"Ideal para comer más variado y sostenible. Muy práctico en la cocina."</p>
+                        <div class="rec-footer"><span>Recomendado por Inés P.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 229</span></div>
+                    </article>
+
+                    <article class="recommendation-card"
+                            data-theme="Bienestar emocional"
+                            data-support="Podcast"
+                            data-likes="1102"
+                            data-date="2025-01-30">
+                        <div class="rec-icon"><i class="fa-solid fa-podcast"></i></div>
+                        <h3>Respira y Conecta</h3>
+                        <p class="rec-author">Podcast de meditación guiada</p>
+                        <p class="rec-comment">"Ideal para desconectar al final del día. Corto, relajante y efectivo."</p>
+                        <div class="rec-footer"><span>Recomendado por Carla D.</span><span class="rec-likes"><i class="fa-solid fa-heart"></i> 1102</span></div>
+                    </article>
+
+
+                </div>
             </div>
+            <button class="carousel-button next rec-next">&#10095;</button>
+            </div>
+
+            <!-- === FORMULARIO: AÑADIR RECOMENDACIÓN === -->
+            <div class="section-box recommendation-form">
+            <div class="centrado">
+                <h2>Añade tu recomendación</h2>
+                <p>Comparte aquello que te inspira y gana puntos.</p>
+            </div><br>
+
+            <div class="rec-form-fields">
+                <label>Tema
+                <select id="new-theme">
+                    <option value="">Selecciona</option>
+                    <option value="Nutrición">Nutrición</option>
+                    <option value="Bienestar emocional">Bienestar emocional</option>
+                    <option value="Bienestar físico">Bienestar físico</option>
+                </select>
+                </label>
+
+                <label>Soporte
+                <select id="new-support">
+                    <option value="">Selecciona</option>
+                    <option value="Libro">Libro</option>
+                    <option value="Película">Película</option>
+                    <option value="Video">Video</option>
+                    <option value="Podcast">Podcast</option>
+                    <option value="Serie">Serie</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                </label>
+
+                <label>Título
+                <input type="text" id="new-title" placeholder="Título de la obra">
+                </label>
+
+                <label>Autor
+                <input type="text" id="new-author" placeholder="Autor / Creador">
+                </label>
+
+                <label>Comentario
+                <textarea id="new-comment" rows="3" placeholder="¿Por qué lo recomiendas?"></textarea>
+                </label>
+            </div>
+            <div class="boton-calcular text-center">
+                <button id="btn-add-rec" class="btn-action">Enviar recomendación</button>
+                <p id="rec-resultado"></p>
+            </div>
+            </div>
+        </div>
+
+        <!-- === TUS RUTINAS === -->
+        <div class="rutinas section-box">
+            <div class="centrado">
+            <h2>Tus rutinas</h2>
+            <p>Calcula tus puntos según tu actividad semanal.</p>
+            </div><br><br>
+
+            <div class="filtros-rutina">
+            <div class="campo">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo">
+                <option value="">Selecciona</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" disabled>
+                <option value="">Selecciona tipo primero</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="frecuencia">Frecuencia (días/semana):</label>
+                <select id="frecuencia">
+                <option value="">Selecciona</option>
+                <option value="1">1 día</option>
+                <option value="2">2 días</option>
+                <option value="3">3 días</option>
+                <option value="4">4 días</option>
+                <option value="5">5 días</option>
+                <option value="6">6 días</option>
+                <option value="7">7 días</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="duracion">Duración (min por sesión):</label>
+                <input type="number" id="duracion" min="1">
+            </div>
+            </div>
+
+            <div class="boton-calcular text-center">
+            <button id="btn-calcular">Calcular</button>
+            <span id="resultado"></span>
+            </div>
+        </div>
+
+        <!-- === TUS PRUEBAS DEPORTIVAS === -->
+        <div class="section-box">
+            <div class="centrado">
+            <h1>Tus pruebas deportivas</h1>
+            <p>¿Te animas a subir tus pruebas deportivas? Dinos si has participado en caminatas solidarias, maratones, marchas cicloturistas, campeonatos de pádel, jornadas de silencio, gymkhanas, etc.</p>
+
+            <textarea id="descripcion" placeholder="Describe tu prueba..." rows="6" style="width:100%; border-radius:8px;"></textarea><br><br>
+
+            <input type="file" id="foto-prueba"><br><br>
+
+            <button id="enviar-prueba">Enviar</button>
+
+            <p id="mensaje-confirmacion" style="margin-top:1rem;"></p>
+            </div>
+        </div>
         </section>
 
-        <section id="cursos" class="page-section">
-            <div class="page-header">
-                <h1>Catálogo de Cursos OOO</h1>
-                <p>Fórmate a tu ritmo y gana puntos. El conocimiento también es bienestar.</p>
-            </div>
-            <div class="course-grid">
-                <article class="course-card">
-                    <div class="course-card-image"><i class="fa-solid fa-brain"></i></div>
-                    <div class="course-card-content"><span class="course-card-category">Bienestar Emocional</span><h3>Gestión del Estrés</h3><p>Técnicas y herramientas para manejar la presión diaria.</p><div class="progress-bar"><div class="progress" style="width: 75%;"></div></div><a href="#" class="btn-action">Continuar Curso</a></div>
-                </article>
-                <article class="course-card">
-                    <div class="course-card-image"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <div class="course-card-content"><span class="course-card-category">Salud Física</span><h3>Primeros Auxilios Básicos</h3><p>Aprende a actuar en situaciones de emergencia.</p><div class="progress-bar"><div class="progress" style="width: 20%;"></div></div><a href="#" class="btn-action">Continuar Curso</a></div>
-                </article>
-            </div>
-        </section>
 
-        <section id="tienda" class="page-section">
-            <div class="page-header">
-                <h1>Tienda de Recompensas OOO</h1>
-                <p>Usa tus puntos OOO para canjear premios exclusivos.</p>
-            </div>
-            <div class="product-grid">
-                <article class="product-card">
-                    <div class="product-image"><i class="fa-solid fa-mug-hot"></i></div><h3>Taza Corporativa OOO</h3><div class="product-price">500 Puntos</div><a href="#" class="btn-redeem">Canjear</a>
-                </article>
-                <article class="product-card">
-                    <div class="product-image"><i class="fa-solid fa-bottle-water"></i></div><h3>Botella de Agua Reutilizable</h3><div class="product-price">750 Puntos</div><a href="#" class="btn-redeem">Canjear</a>
-                </article>
-            </div>
-        </section>
+
+
+
+        
+
+<section id="tienda" class="page-section">
+    <div id="cart-panel" class="cart-panel">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Mi cesta</span>
+        <div id="cart-items" class="cart-items"></div>
+        <div id="cart-summary" class="cart-summary">
+            <p>Total: <span id="cart-total">0</span> puntos</p>
+            <p>Te quedan: <span id="points-left">1200</span> puntos</p>
+        </div>
+        <button class="btn-action">Canjear</button>
+    </div>
+
+
+  <div class="page-header">
+    <h1>TIENDA OREKA</h1>
+    <p>Usa tus puntos OOO para canjear premios exclusivos.</p>
+  </div>
+
+  <div class="product-grid">
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-mug-hot"></i></div>
+      <h3>Taza Corporativa</h3>
+      <div class="product-price">500 Puntos</div>
+      <div class="product-stock">Stock: 12 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-bottle-water"></i></div>
+      <h3>Botella Reutilizable</h3>
+      <div class="product-price">750 Puntos</div>
+      <div class="product-stock">Stock: 20 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-pen"></i></div>
+      <h3>Bolígrafo Oreka</h3>
+      <div class="product-price">150 Puntos</div>
+      <div class="product-stock">Stock: 50 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-book"></i></div>
+      <h3>Cuaderno Oreka</h3>
+      <div class="product-price">300 Puntos</div>
+      <div class="product-stock">Stock: 30 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-tshirt"></i></div>
+      <h3>Camiseta Oreka</h3>
+      <div class="product-price">1000 Puntos</div>
+      <div class="product-stock">Stock: 15 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-key"></i></div>
+      <h3>Llavero Oreka</h3>
+      <div class="product-price">200 Puntos</div>
+      <div class="product-stock">Stock: 40 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-mouse"></i></div>
+      <h3>Donación</h3>
+      <div class="product-price">350 Puntos</div>
+      <div class="product-stock">Stock: 25 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-umbrella"></i></div>
+      <h3>Paraguas Oreka</h3>
+      <div class="product-price">900 Puntos</div>
+      <div class="product-stock">Stock: 10 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image"><i class="fa-solid fa-mug-saucer"></i></div>
+      <h3>Set de Té Oreka</h3>
+      <div class="product-price">1200 Puntos</div>
+      <div class="product-stock">Stock: 8 unidades</div>
+      <a href="#" class="btn-redeem">Seleccionar</a>
+    </article>
+  </div>
+</section>
+
         
         <section id="mi-espacio" class="page-section">
             <div class="page-header">
-                <h1>Mi Espacio OOO</h1>
+                <h1>MI ESPACIO OREKA</h1>
                 <p>Tu centro de control personal. Aquí puedes ver tu progreso, tu actividad y tus puntos.</p>
             </div>
 
             <div class="dashboard-header">
                 <div class="points-card">
                     <span class="points-value">1,250</span>
-                    <span class="points-label">Capital OOO (Total)</span>
+                    <span class="points-label">Capital (Total)</span>
                 </div>
                 <div class="points-card">
-                    <span class="points-value">133</span>
+                    <span class="points-value">450</span>
                     <span class="points-label">Puntos de este mes</span>
                 </div>
             </div>
 
             <div class="dashboard-grid">
-                <div class="card">
-                    <h2><i class="fa-solid fa-list-check"></i> Mi Actividad Reciente</h2>
-                    <table class="activity-table">
-                        <thead>
-                            <tr>
-                                <th>Fecha</th>
-                                <th>Concepto</th>
-                                <th>Puntos</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>15 Junio, 2025</td>
-                                <td>Curso completado: "Gestión del Estrés"</td>
-                                <td class="points-positive">+15</td>
-                            </tr>
-                            <tr>
-                                <td>12 Junio, 2025</td>
-                                <td>Asistencia a webinar: "Nutrición y Energía"</td>
-                                <td class="points-positive">+10</td>
-                            </tr>
-                            <tr>
-                                <td>10 Junio, 2025</td>
-                                <td>Recomendación de libro: "El poder del ahora"</td>
-                                <td class="points-positive">+8</td>
-                            </tr>
-                            <tr>
-                                <td>02 Junio, 2025</td>
-                                <td>Canje en tienda: Taza OOO</td>
-                                <td class="points-negative">-500</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="card">
+                <h2><i class="fa-solid fa-list-check"></i> Mi Actividad Reciente</h2>
+                <table class="activity-table">
+                    <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Concepto</th>
+                        <th>Origen</th> <!-- NUEVA COLUMNA -->
+                        <th>Puntos</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>15 Junio, 2025</td>
+                        <td>Curso completado: "Gestión del Estrés"</td>
+                        <td>Aula</td>
+                        <td class="points-positive">+150</td>
+                    </tr>
+                    <tr>
+                        <td>12 Junio, 2025</td>
+                        <td>Asistencia a webinar: "Nutrición y Energía"</td>
+                        <td>Foro</td>
+                        <td class="points-positive">+100</td>
+                    </tr>
+                    <tr>
+                        <td>10 Junio, 2025</td>
+                        <td>Recomendación de libro: "El poder del ahora"</td>
+                        <td>Recomendación</td>
+                        <td class="points-positive">+80</td>
+                    </tr>
+                    <tr>
+                        <td>8 Junio, 2025</td>
+                        <td>Participación en debate: "Cambio climático y salud"</td>
+                        <td>Foro</td>
+                        <td class="points-positive">+120</td>
+                    </tr>
+                    <tr>
+                        <td>16 Mayo, 2025</td>
+                        <td>Rutina registrada: 30 min de Yoga</td>
+                        <td>Rutinas</td>
+                        <td class="points-positive">+90</td>
+                    </tr>
+                    <tr>
+                        <td>14 Abril, 2025</td>
+                        <td>Comentario destacado en foro: "Mindfulness en el trabajo"</td>
+                        <td>Foro</td>
+                        <td class="points-positive">+60</td>
+                    </tr>
+                    <tr>
+                        <td>13 Abril, 2025</td>
+                        <td>Subida de prueba deportiva: Carrera 5K</td>
+                        <td>Pruebas deportivas</td>
+                        <td class="points-positive">+400</td>
+                    </tr>
+                    <tr>
+                        <td>25 Febrero, 2025</td>
+                        <td>Recomendación de serie: "Headspace: Meditación Guiada"</td>
+                        <td>Recomendación</td>
+                        <td class="points-positive">+80</td>
+                    </tr>
+                    <tr>
+                        <td>09 Febrero, 2025</td>
+                        <td>Curso completado: "Alimentación consciente"</td>
+                        <td>Aula</td>
+                        <td class="points-positive">+200</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
                 
                 <div class="card">
                     <h2><i class="fa-solid fa-person-running"></i> Realizar una Aportación</h2>
@@ -177,11 +679,47 @@
                         <a href="#" class="btn-action">Añadir Prueba Deportiva</a>
                     </div>
                 </div>
+
+                <div class="card">
+                    <h2><i class="fa-solid fa-store"></i> Historial de Canjes en Tienda</h2>
+                    <p>Consulta el estado de tus artículos canjeados: si ya los has recibido o están pendientes de recogida.</p>
+                    <table class="activity-table">
+                        <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Artículo</th>
+                            <th>Estado</th>
+                            <th>Puntos</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>18 Junio, 2025</td>
+                            <td>Botella reutilizable</td>
+                            <td><span class="badge badge-pending">Pendiente</span></td>
+                            <td class="points-negative">-300</td>
+                        </tr>
+                        <tr>
+                            <td>02 Junio, 2025</td>
+                            <td>Taza OOO</td>
+                            <td><span class="badge badge-received">Recibido</span></td>
+                            <td class="points-negative">-500</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </section>
 
     </main>
 
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js "></script>
     <script src="script.js"></script>
+
+
+
 </body>
 </html>
